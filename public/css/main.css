@@ -50,6 +50,12 @@ footer{
   background: #eee;
   padding: 20px;
   text-align: center;
+  position : absolute;
+  bottom : 0;
+    height : 40px;
+    margin-top : 40px;
+    width: 100%;
+
 }
 
 .title {
