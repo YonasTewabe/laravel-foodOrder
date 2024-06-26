@@ -1,13 +1,23 @@
 @extends('layouts.layout')
 @section('content')
-<div class="wrapper pizza-details">
-<h1>Order for {{$food->name}}</h1>
-<p class="type">Food - {{$food->food}}</p>
-<p class="base">Drink - {{$food->drink}}</p>
+    <div class="wrapper pizza-details">
+        <h1>Order for {{ $food->name }}</h1>
+        <p class="type">Food - {{ $food->food }}</p>
+        <p class="base">Drink - {{ $food->drink }}</p>
+        <p class="extras">Extras</p>
+        <ul>
+            @foreach ($food->extras as $extra)
+                <li>
+                    {{ $extra }}
+                </li>
+            @endforeach
+        </ul>
+        <form action="/foods/{{ $food->id }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button>Order Served</button>
+        </form>
+    </div>
 
- 
-</div>
-
-<a href="/foods" class="back">Back to all orders</a>
-
+    <a href="/foods" class="back">Back to all orders</a>
 @endsection
