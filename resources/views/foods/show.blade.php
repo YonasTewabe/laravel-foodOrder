@@ -12,7 +12,7 @@
                 </li>
             @endforeach
         </ul>
-        <form action="/foods/{{ $food->id }}" method="POST">
+        <form action="{{route('foods.destroy', $food->id) }}" method="POST">
             @csrf
             @method('DELETE')
             <button>Order Served</button>

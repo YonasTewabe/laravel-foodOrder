@@ -16,13 +16,13 @@
     @endif
 
         <div class="content">
-            <img src="/images/image.png" alt="habesha house logo">
+            <img src="/images/image.png" alt="Habesha Cuisine logo">
             <div class="title m-b-md">
                 The North's Best Habesha Food
             </div>
 
             <p class="mssg">{{ session('message') }}</p>
-            <a href="/foods/create">Order Food</a>
+            <a href="{{route('foods.create')}}">Order Food</a>
         </div>
     </div>
 @endsection

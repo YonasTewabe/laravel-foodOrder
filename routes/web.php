@@ -8,13 +8,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/foods', [FoodController::class, 'index']);
-Route::get('/foods/create', [FoodController::class, 'create']);
+Route::get('/foods', [FoodController::class, 'index'])->middleware('auth');
+Route::get('/foods/create', [FoodController::class, 'create'])->name('foods.create');
 Route::post('/foods', [FoodController::class, 'store']);
-Route::get('/foods/{id}', [FoodController::class, 'show'] );
-Route::delete('/foods/{id}', [FoodController::class, 'destroy'] );
+Route::get('/foods/{id}', [FoodController::class, 'show'])->middleware('auth');
+Route::delete('/foods/{id}', [FoodController::class, 'destroy'])->name('foods.destroy')->middleware('auth');
 
 
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

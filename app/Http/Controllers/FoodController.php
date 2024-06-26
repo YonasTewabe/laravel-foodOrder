@@ -9,6 +9,8 @@ use function Laravel\Prompts\error;
 
 class FoodController extends Controller
 {
+
+    
     public function index()
     {
         $foods = Order::latest()->get();
