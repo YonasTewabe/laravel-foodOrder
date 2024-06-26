@@ -5,7 +5,7 @@
     <form action="/foods" method="POST">
         @csrf
 
-        <label for="name">Your Name:</label>
+        <label for="name">Your Full Name:</label>
         <input type="text" name="name" id="name"><br>
 
         <label for="type">Choose Food:</label>
