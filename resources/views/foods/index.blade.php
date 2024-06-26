@@ -7,7 +7,7 @@
 
             @foreach($foods as $food)
             <div>
-              {{ $loop->index }} - {{ $food['type'] }} - {{ $food['drink'] }}
+              {{ $food->name }} - {{ $food->food }} - {{ $food->drink }}
          
             </div>
           @endforeach

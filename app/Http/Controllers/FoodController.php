@@ -3,16 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Order;
 
 class FoodController extends Controller
 {
     public function index(){
-        $foods = [
-            ['type' => 'Doro Wot', 'drink' => 'Water'],
-            ['type' => 'Tibs', 'drink' => 'Ambo Wuha'],
-            ['type' => 'Shiro', 'drink' => 'Tej'],
-            ['type' => 'Kitfo', 'drink' => 'Beer']
-        ];
+        $foods = Order::latest()->get();
         
             return view('foods', [
                 'foods' => $foods
