@@ -10,14 +10,21 @@ class FoodController extends Controller
     public function index(){
         $foods = Order::latest()->get();
         
-            return view('foods', [
+            return view('foods.index', [
                 'foods' => $foods
             ]);
     }
 
 
     public function show($id){
-    return view('details', ['id' => $id]);
 
+        $food = Order::findOrFail($id);
+
+        return view('foods.show', ['food' => $food]);
+    }
+
+
+    public function create(){
+        return view('foods.create');
     }
 }
