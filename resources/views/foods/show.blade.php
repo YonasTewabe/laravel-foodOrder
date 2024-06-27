@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="wrapper pizza-details">
+    <div class="wrapper food-details">
         <h1>Order for {{ $food->name }}</h1>
         <p class="type">Food - {{ $food->food }}</p>
         <p class="base">Drink - {{ $food->drink }}</p>

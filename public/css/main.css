@@ -71,32 +71,32 @@ html, body {
     margin: 20px auto;
   }
   
-  /* create pizza form */
+  /* create food form */
   
-  .create-pizza {
+  .create-food {
     background: #f7f7f7;
     padding: 20px;
   }
   
-  .create-pizza label,
-  .create-pizza select {
+  .create-food label,
+  .create-food select {
     display: block;
   }
   
-  .create-pizza label {
+  .create-food label {
     margin-top: 30px;
   }
   
-  .create-pizza select {
+  .create-food select {
     padding: 8px;
     width: 200px;
   }
   
-  .create-pizza input[type=checkbox] {
+  .create-food input[type=checkbox] {
     margin: 10px;
   }
   
-  .create-pizza input[type=submit] {
+  .create-food input[type=submit] {
     background: #5e2195;
     padding: 8px 20px;
     color: #fff;
@@ -104,19 +104,19 @@ html, body {
     margin-top: 20px;
   }
   
-  /* pizza details page */
+  /* food details page */
   
-  .pizza-details {
+  .food-details {
     background: #f7f7f7;
     padding: 20px;
   }
   
-  .pizza-details p {
+  .food-details p {
     margin: 20px 0;
     font-weight: bold;
   }
   
-  .pizza-details button {
+  .food-details button {
     background: #5e2195;
     padding: 8px 20px;
     color: #fff;
@@ -132,32 +132,32 @@ html, body {
     margin-bottom: 20px;
   }
   
-  /* pizza index page */
+  /* food index page */
   
-  .pizza-index h1 {
+  .food-index h1 {
     margin-bottom: 40px;
   }
   
-  .pizza-index .pizza-item {
+  .food-index .food-item {
     margin: 10px 0;
     padding: 12px;
     background: #f4f4f4;
   }
   
-  .pizza-index .pizza-item img {
-    width: 60px;
-    height: 15px;
+  .food-index .food-item img {
+    width: 100px;
+    height: 100px;
     display: inline-block;
     
   }
   
-  .pizza-index .pizza-item h4 {
+  .food-index .food-item h3 {
     display: inline-block;
     font-weight: normal;
     margin-left: 20px;
   }
   
-  .pizza-index .pizza-item h4 a {
+  .food-index .food-item h3 a {
     color: #777;
     text-decoration: none !important;
   }
