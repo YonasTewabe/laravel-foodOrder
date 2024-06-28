@@ -34,6 +34,6 @@ Access the application at http://localhost:8000.
 
 ## Features
 
-User authentication
-CRUD operations for placing order and for when order is served
+User authentication<br>
+CRUD operations for placing order and for when order is served<br>
 Role-based access control
