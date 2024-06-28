@@ -5,9 +5,9 @@ This is a simple laravel project for ordering food. The website allows users to 
 ## Installation
 --> Prerequisites
 
-PHP >= 8.0
-Composer
-MySQL database
+PHP >= 8.0<br>
+Composer<br>
+MySQL database<br>
 Node.js & npm
 
 ## Steps
