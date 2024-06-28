@@ -1,9 +1,9 @@
 ## Introduction
 
-This is a simple laravel project for ordering food. The website allows users to order food in advamce before going to the restaurant.
+This is a simple laravel project for ordering food. The website allows users to order food in advance before going to the restaurant.
 
 ## Installation
---> Prerequisites
+Prerequisites
 
 PHP >= 8.0<br>
 Composer<br>
