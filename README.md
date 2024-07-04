@@ -1,18 +1,18 @@
 ## Introduction
 
-This is a simple laravel project for ordering food. The website allows users to order food in advamce before going to the restaurant.
+This is a simple laravel project for ordering food. The website allows users to order food in advance before going to the restaurant.
 
 ## Installation
---> Prerequisites
+Prerequisites
 
-PHP >= 8.0
-Composer
-MySQL database
+PHP >= 8.0<br>
+Composer<br>
+MySQL database<br>
 Node.js & npm
 
 ## Steps
 
-1. composer install<br>
+1. composer install
 npm install
 
 2. cp .env.example .env
@@ -29,5 +29,6 @@ Access the application at http://localhost:8000.
 
 ## Features
 
-User authentication
+User authentication<br>
 CRUD operations for placing order and for when order is served
+
