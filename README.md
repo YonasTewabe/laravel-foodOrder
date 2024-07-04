@@ -12,23 +12,18 @@ Node.js & npm
 
 ## Steps
 
-1. Install dependencies:
-composer install
+1. composer install<br>
 npm install
 
-2. Create a copy of the .env file:
-cp .env.example .env
+2. cp .env.example .env
 
 3. Configure the .env file with your database and other settings.
 
-4. Run migrations:
-php artisan migrate
+4. php artisan migrate
 
-5. Install front-end dependencies and compile assets:
-npm run dev
+5. npm run dev
 
-6. Start the local development server:
-php artisan serve
+6. php artisan serve
 
 Access the application at http://localhost:8000.
 
@@ -36,4 +31,3 @@ Access the application at http://localhost:8000.
 
 User authentication
 CRUD operations for placing order and for when order is served
-Role-based access control
